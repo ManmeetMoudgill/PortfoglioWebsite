@@ -11,6 +11,11 @@
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
     <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 </head>
@@ -25,15 +30,15 @@
         <!-- right side div -->
         <div class=" hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex items-center  justify-end ">
             <ul class="flex">
-                <li class=" mx-4 "><a
+                <li class=" mx-4 animate__animated animate__flash    "><a
                         class="hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">01.&nbsp&nbsp</span>ABOUT</a></li>
-                <li class=" mx-4 "><a
+                <li class=" mx-4 animate__animated animate__flash    "><a
                         class=" hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">02.&nbsp&nbsp</span>ABOUT</a></li>
-                <li class=" mx-4 "><a
+                <li class=" mx-4 animate__animated animate__flash   "><a
                         class="hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">03.&nbsp&nbsp</span>ABOUT</a></li>
-                <li class=" mx-4 "><a
+                <li class=" mx-4  animate__animated animate__flash    "><a
                         class=" hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">04.&nbsp&nbsp</span>ABOUT</a></li>
-                <li class=" mx-4 "><a
+                <li class=" mx-4 animate__animated   animate__flash  "><a
                         class= "hover:text-xl cursor-pointer  delay-75 transition-all text-white transformtext-white text-sm"><span class="greenish_text_color">05.&nbsp&nbsp</span>ABOUT</a></li>
             </ul>
         </div>
@@ -103,8 +108,8 @@
 
 
      <!-- INTRODUCTION DIV HERE -->
-     <div class="h-screen pt-5 sm:pt-5 md:pt-5 lg:pt-0 xl:pt-0 2xl:pt-0  flex flex-col pl-10 pr-10">
-        <div class=" pl-0 sm:pl-0 md:pl-24 lg:pl-24 xl:pl-24 2xl:pl-24 p-2 sm:p-2 md:p-2 lg:p-6 xl:p-8 2xl:p-8">
+     <div class="h-full mb-10  sm:h-full md:h-full lg:h-screen xl:h-screen 2xl:h-screen pt-5 sm:pt-5 md:pt-5 lg:pt-0 xl:pt-0 2xl:pt-0  flex flex-col pl-10 pr-10">
+        <div class=" pl-0 sm:pl-0 md:pl-16 lg:pl-24 xl:pl-24 2xl:pl-24 p-2 sm:p-2 md:p-2 lg:p-6 xl:p-8 2xl:p-8">
             <!-- FIRST INSIDE DIV -->
             <div class="intro_start_heading mb-6 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex ">Hi,my name is</div>
             <!-- SECOND INSIDE DIV -->
@@ -130,26 +135,55 @@
 
 
     <!-- ABOUT ME CONTAINER -->
-    <div class="about_div pl-10 mr-10">
-        <div class="pl-10 flex justify-center pr-10">
-                   <div class="grid grid-cols-2 w-4/5">
+    <div data-aos="fade-up" class="about_div  pl-0 sm:pl-10 md:pl-2 lg:pl-10 xl:pl-10 2xl:pl-10 mr-2 sm:mr-2 md:mr-2 lg:mr-10 xl:mr-10 2xl:mr-10 ">
+        <div class="pl-0 sm:pl-0 md:pl-0 lg:pl-10 xl:pl-10 2xl:pl-10 flex justify-center pr-2 sm:pr-2 md:pr-2 lg:pr-10 xl:pr-0 2xl:pr-0 ">
+                   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2  w-full sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5">
                        <!-- FIRST COLUMN -->
                             <div class="">
-                                <div class="border-2 flex justify-center items-center border-red-600">
-                                    <div class="greenish_text_color text-xl mr-1">01.</div>
-                                    <div class="text-2xl ml-2">About Me</div>
+                                <div class=" flex justify-center items-center">
+                                    <div class="greenish_text_color text-2xl mr-1">01.</div>
+                                    <div class="text-3xl ml-2">About Me</div>
                                     <div class="flex ml-3  h-full flex-grow ">
                                         <div class="h-custom  w-full bg-gray-400"></div>
                                     </div>
                                 </div>
-                               <!--  <div class="border-2 border-red-600"></div>
-                                <div class="border-2 border-red-600"></div>
-                                <div class="border-2 border-red-600"></div>
-                                <div class="border-2 border-red-600"></div> -->
+                                <div class=" mt-4 text-base ">
+                                    Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                                </div>
+                                <div class="text-base mt-4">
+                                    Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
+                                </div>
+                               
+                                <div class=" mt-4">
+                                        <div class="text-base">Here are a few technologies I’ve been working with recently:</div>
+                                        <div class="grid grid-cols-2 mt-3">
+                                            <div class="">
+                                               <div class="started_dotted">JavaScript (ES6+)</div>
+                                               <div class="started_dotted">Wordpress</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="started_dotted">Laravel</div>
+                                                <div class="started_dotted">Vue js</div> 
+                                             </div>
+                                           
+                                        </div>
+            
+                                </div> 
                             </div>
 
                        <!-- SECOND COLUMN -->     
-                        <div class="border-2 border-red-600">asdasd</div>
+                        <div class=" flex justify-center pt-14 ">
+                            <div class="w-80 h-80 sm:w-60 sm:h-60 md:w-60 md:h-60 lg:w-80 lg:h-80 xl:w-80 xl:h-80 2xl:w-80 2xl:h-80">
+                                <div id="img_box" class="z-50  group hover-group overflow-hidden relative rounded-md border-blue ">
+                                        <img id="put_forward" class=" group-hover:scale-105 group-hover:rotate-2 w-full  transform  cursor-pointer transition-all delay-75" src="./img/moudgill.jpg" />
+                                       
+                                </div>
+
+                            </div>
+                            
+
+                            
+                        </div>
                    </div>
         </div>
 
@@ -232,5 +266,8 @@
     </div>
 
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

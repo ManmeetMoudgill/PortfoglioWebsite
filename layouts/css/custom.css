@@ -120,3 +120,23 @@ html{
     right:2px;
 }
 
+.started_dotted::before{
+   
+    position: relative;
+    top: 0px;
+    left: 0px;
+    content:"▹";
+    color:var(--green);
+    
+}
+
+
+#put_forward{
+    filter: grayscale(100%) contrast(1);
+    mix-blend-mode: multiply;
+    z-index: 999;
+}
+#put_forward:hover{
+    filter: grayscale(0%) contrast(1);
+
+}
