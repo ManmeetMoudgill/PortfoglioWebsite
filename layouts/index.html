@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfoglio Website</title>
-    <link rel="stylesheet" href="./css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 </head>
 
@@ -18,38 +19,100 @@
     <!-- HEADER HERE-->
     <div id="hidden_by_scollded" class="flex justify-between p-4 pl-10 pr-10">
         <!-- left side div -->
-        <div class="h-full">
+        <div class="h-full ">
             <img class="h-14 rounded-full" src="./img/moudgill.jpg" />
         </div>
         <!-- right side div -->
-        <div class=" flex items-center">
+        <div class=" hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex items-center  justify-end ">
             <ul class="flex">
                 <li class=" mx-4 "><a
-                        class="text-white text-sm"><span>01.&nbsp&nbsp</span>ABOUT</a></li>
+                        class="hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">01.&nbsp&nbsp</span>ABOUT</a></li>
                 <li class=" mx-4 "><a
-                        class="text-white text-sm"><span>02.&nbsp&nbsp</span>ABOUT</a></li>
+                        class=" hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">02.&nbsp&nbsp</span>ABOUT</a></li>
                 <li class=" mx-4 "><a
-                        class="text-white text-sm"><span>03.&nbsp&nbsp</span>ABOUT</a></li>
+                        class="hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">03.&nbsp&nbsp</span>ABOUT</a></li>
                 <li class=" mx-4 "><a
-                        class="text-white text-sm"><span>04.&nbsp&nbsp</span>ABOUT</a></li>
+                        class=" hover:text-xl cursor-pointer  delay-75 transition-all transform text-white text-sm"><span class="greenish_text_color">04.&nbsp&nbsp</span>ABOUT</a></li>
                 <li class=" mx-4 "><a
-                        class="text-white text-sm"><span>05.&nbsp&nbsp</span>ABOUT</a></li>
+                        class= "hover:text-xl cursor-pointer  delay-75 transition-all text-white transformtext-white text-sm"><span class="greenish_text_color">05.&nbsp&nbsp</span>ABOUT</a></li>
             </ul>
         </div>
+
+        <!-- SMALL AND MEDIUYM DEVICES -->
+            <div class="flex z-50 items-center sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden">
+                    <div id="toggle_menu" class="toggle_open_menu  relative flex items-center  w-8   h-6">
+                        <div  id="change_design" class="design_line   "></div>
+                    </div>
+                    <div id="close_menu" class="hidden  relative  items-center  w-8   h-6">
+                        <div  id="change_design" class="cross_line   "></div>
+                    </div>
+                   
+            </div>
+
+    </div>
+
+    <!-- SMALL MOBILES AND MEDIUM DEVICES MENU -->
+    <div id="open_menu" class="fixed  top-0 right-0 translate-x-full w-96 h-screen">
+            <nav class="inside_menu_div relative h-full w-full">
+                
+                <ul class="absolute top-14 w-full">
+                    <li class="mt-2 mb-2 pt-2 pb-2">
+                        <a class="">
+                            <div class="flex flex-col  items-center  ">
+                                <h5 class="greenish_text_color">01.</h5>
+                                <h5 class="font-bold">ABOUT</h5>
+                            </div>
+                       </a>
+                    </li>
+                    <li class=" mt-2 mb-2 pt-2 pb-2">
+                        <a class="">
+                            <div class="flex flex-col  items-center  ">
+                                <h5 class="greenish_text_color">01.</h5>
+                                <h5 class="font-bold">ABOUT</h5>
+                            </div>
+                       </a>
+                    </li>
+                    <li class="mt-2 mb-2 pt-2 pb-2">
+                        <a class="">
+                            <div class="flex flex-col  items-center  ">
+                                <h5 class="greenish_text_color">01.</h5>
+                                <h5 class="font-bold">ABOUT</h5>
+                            </div>
+                       </a>
+                    </li>
+                    <li class="mt-2 mb-2 pt-2 pb-2">
+                        <a class="">
+                            <div class="flex flex-col  items-center  ">
+                                <h5 class="greenish_text_color">01.</h5>
+                                <h5 class="font-bold">ABOUT</h5>
+                            </div>
+                       </a>
+                    </li>
+                    <li class="flex justify-center mt-14  mb-2 pt-2 pb-2">
+                        <div clas=" border-blue-900 ">
+                            <button class="btn   h-12 w-48 rounded-md">Resume</button>
+                        </div>
+                        
+                    </li>
+           
+                    
+                </ul>
+
+            </nav>
     </div>
 
 
      <!-- INTRODUCTION DIV HERE -->
-     <div class="h-screen  flex flex-col pl-10 pr-10">
-        <div class=" p-8 pl-24 ">
+     <div class="h-screen pt-5 sm:pt-5 md:pt-5 lg:pt-0 xl:pt-0 2xl:pt-0  flex flex-col pl-10 pr-10">
+        <div class=" pl-0 sm:pl-0 md:pl-24 lg:pl-24 xl:pl-24 2xl:pl-24 p-2 sm:p-2 md:p-2 lg:p-6 xl:p-8 2xl:p-8">
             <!-- FIRST INSIDE DIV -->
-            <div class="intro_start_heading mb-6 ">Hi,my name is</div>
+            <div class="intro_start_heading mb-6 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex ">Hi,my name is</div>
             <!-- SECOND INSIDE DIV -->
-            <div class=" intro_name_heading font-bold text-5xl ">Manmeet Moudgill</div>
-            <div class=" intro_explain_heading font-bold mt-6 text-5xl ">I build things for the web.</div>
+            <div class=" intro_name_heading font-bold  text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl ">Manmeet Moudgill</div>
+            <div class=" intro_explain_heading font-bold mt-2 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-6 2xl:pt-6 text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl ">I build things for the web.</div>
 
             <!-- THIRD INSIDE DIV -->
-            <div class="  w-5/12 mt-8 mb-8">I’m a software engineer 
+            <div class="  w-full sm:w-full md:w-full lg:w-5/12 xl:w-5/12 2xl:w-5/12 mt-8 mb-8">I’m a software engineer 
             specializing in building (and occasionally designing) 
             exceptional digital experiences. 
             Currently, I’m focused on building accessible, 
@@ -66,12 +129,43 @@
     </div>
 
 
+    <!-- ABOUT ME CONTAINER -->
+    <div class="about_div pl-10 mr-10">
+        <div class="pl-10 flex justify-center pr-10">
+                   <div class="grid grid-cols-2 w-4/5">
+                       <!-- FIRST COLUMN -->
+                            <div class="">
+                                <div class="border-2 flex justify-center items-center border-red-600">
+                                    <div class="greenish_text_color text-xl mr-1">01.</div>
+                                    <div class="text-2xl ml-2">About Me</div>
+                                    <div class="flex ml-3  h-full flex-grow ">
+                                        <div class="h-custom  w-full bg-gray-400"></div>
+                                    </div>
+                                </div>
+                               <!--  <div class="border-2 border-red-600"></div>
+                                <div class="border-2 border-red-600"></div>
+                                <div class="border-2 border-red-600"></div>
+                                <div class="border-2 border-red-600"></div> -->
+                            </div>
+
+                       <!-- SECOND COLUMN -->     
+                        <div class="border-2 border-red-600">asdasd</div>
+                   </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
 
 
 
     <!-- FIXED DIV  -->
-    <div class="h-80  w-full fixed bottom-0 flex justify-between ">
-        <div class="left_side_div   pl-10 h-full w-full ">
+    <div class="h-80 hidden  sm:hidden md:flex lg:flex xl:flex 2xl:flex  w-full fixed bottom-0  justify-between ">
+        <div class="left_side_div   pl-10 h-full ">
             <div class=" w-11">
                 <ul class="flex list_logos flex-col">
                     <li class="mb-7"><a class="logos flex justify-center" href="https://github.com/" aria-label="GitHub"
@@ -124,7 +218,7 @@
                 </ul>
             </div>
         </div>
-        <div class="right_side_div  h-full flex pr-10 justify-end w-full ">
+        <div class="right_side_div  h-full flex pr-10 justify-end ">
             <div class= w-11">
                 <div class="last_list_item flex flex-col items-center">
                     <a
