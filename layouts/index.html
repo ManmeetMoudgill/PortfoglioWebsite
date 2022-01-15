@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfoglio Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
-    <link rel="stylesheet" href="./css/custom.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <script src="./js/jquery.js"></script>
-    <script src="./js/index.js"></script>
+     
 </head>
 
 <body>
@@ -108,7 +109,7 @@
 
 
      <!-- INTRODUCTION DIV HERE -->
-     <div class="h-full mb-10  sm:h-full md:h-full lg:h-screen xl:h-screen 2xl:h-screen pt-5 sm:pt-5 md:pt-5 lg:pt-0 xl:pt-0 2xl:pt-0  flex flex-col pl-10 pr-10">
+     <div class="h-full mb-14 sm:mb-16 md:mb-16 lg:mb-10 xl:mb-10 2xl:mb-10   sm:h-full md:h-full lg:h-screen  xl:h-screen 2xl:h-screen pt-5 sm:pt-5 md:pt-5 lg:pt-14 xl:pt-24  2xl:pt-24  flex flex-col pl-14 pr-10">
         <div class=" pl-0 sm:pl-0 md:pl-16 lg:pl-24 xl:pl-24 2xl:pl-24 p-2 sm:p-2 md:p-2 lg:p-6 xl:p-8 2xl:p-8">
             <!-- FIRST INSIDE DIV -->
             <div class="intro_start_heading mb-6 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex ">Hi,my name is</div>
@@ -135,16 +136,16 @@
 
 
     <!-- ABOUT ME CONTAINER -->
-    <div data-aos="fade-up" class="about_div  pl-0 sm:pl-10 md:pl-2 lg:pl-10 xl:pl-10 2xl:pl-10 mr-2 sm:mr-2 md:mr-2 lg:mr-10 xl:mr-10 2xl:mr-10 ">
-        <div class="pl-0 sm:pl-0 md:pl-0 lg:pl-10 xl:pl-10 2xl:pl-10 flex justify-center pr-2 sm:pr-2 md:pr-2 lg:pr-10 xl:pr-0 2xl:pr-0 ">
-                   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2  w-full sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5">
+    <div data-aos="fade-up" class="about_div  pl-0 sm:pl-10 md:pl-2 lg:pl-10 xl:pl-10 2xl:pl-10 mr-2 sm:mr-2 md:mr-2 lg:mr-10 xl:mr-10 2xl:mr-10  2xl:ml-10 ml-10 sm:ml-10 md:ml-10 lg:ml-10 xl:ml-10">
+        <div class="pl-0 sm:pl-0 md:pl-14 lg:pl-10 xl:pl-10 2xl:pl-10 flex justify-center pr-2 sm:pr-2 md:pr-14 lg:pr-10 xl:pr-0 2xl:pr-0 ">
+                   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2  w-full sm:w-full md:w-full lg:w-full xl:w-4/5 2xl:w-4/5">
                        <!-- FIRST COLUMN -->
                             <div class="">
                                 <div class=" flex justify-center items-center">
-                                    <div class="greenish_text_color text-2xl mr-1">01.</div>
-                                    <div class="text-3xl ml-2">About Me</div>
-                                    <div class="flex ml-3  h-full flex-grow ">
-                                        <div class="h-custom  w-full bg-gray-400"></div>
+                                    <div class="text-white text-2xl mr-1">01.</div>
+                                    <div class="text-3xl text-white ml-2">About Me</div>
+                                    <div class="flex ml-3  h-full flex-grow cursor-pointer">
+                                        <div class="h-custom hover:translate-x-7 transform transition-all delay-75 w-full bg-gray-400"></div>
                                     </div>
                                 </div>
                                 <div class=" mt-4 text-base ">
@@ -173,9 +174,9 @@
 
                        <!-- SECOND COLUMN -->     
                         <div class=" flex justify-center pt-14 ">
-                            <div class="w-80 h-80 sm:w-60 sm:h-60 md:w-60 md:h-60 lg:w-80 lg:h-80 xl:w-80 xl:h-80 2xl:w-80 2xl:h-80">
+                            <div class="w-80 h-80 sm:w-60 sm:h-60 md:w-80 md:h-full lg:w-80 lg:h-80 xl:w-80 xl:h-80 2xl:w-80 2xl:h-80">
                                 <div id="img_box" class="z-50  group hover-group overflow-hidden relative rounded-md border-blue ">
-                                        <img id="put_forward" class=" group-hover:scale-105 group-hover:rotate-2 w-full  transform  cursor-pointer transition-all delay-75" src="./img/moudgill.jpg" />
+                                        <img id="put_forward" class=" group-hover:scale-125 group-hover:rotate-2 w-full  transform  cursor-pointer transition-all delay-75" src="./img/moudgill.jpg" />
                                        
                                 </div>
 
@@ -190,15 +191,287 @@
     </div>
 
 
+<!-- where i have worked div -->
+<div data-aos="fade-up" class="worked_div put_forward_fixed_div  z-50  ml-6 mr-6 sm:ml-8 sm:mr-8 md:ml-8 md:mr-8 lg:ml-10 lg:mr-10 xl:ml-10 xl:mr-10 2xl:ml-10 2xl:mr-10 flex justify-center mt-36 ">
+    <div class=" w-full sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/5 2xl:w-3/5 flex flex-col pl-0 sm:pl-0 md:pl-0 lg:pl-14 xl:pl-12 2xl:pl-14">
+        <div class=" flex justify-center  items-center">
+            <div class="text-2xl text-base sm:text-base md:text-base lg:text-2xl xl:text-2xl  greenish_text_color 2xl:text-2xl mr-1">02.</div>
+            <div class="text-3xl text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl  text-white ml-2">Where i've worked</div>
+            <div class="flex ml-3  h-full flex-grow items-center cursor-pointer">
+                <div class="h-custom hover:translate-x-7 transform transition-all delay-75 w-full bg-gray-400"></div>
+            </div>
+        </div>
+        <div class="h-full  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 pt-8 sm:pt-8 md:pt-8 lg:pt-8 xl:pt-2 2xl:pt-2  mt-4">
+            <div class="col-auto sm:co-auto md:col-auto lg:col-span-2 xl:col-span-2 2xl:col-span-2  ">
+                <!-- THIS ONE IS FOR MEDIUM AND LARGER DEVICES -->
+                <ul class=" flex-col pr-4 hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex ">
+                    <li id="tab-1" class="py-4 px-4 border-l-2 active_class  cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-2" class="py-4 px-4 border-l-2  border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-3" class="py-4 px-4 border-l-2 border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-4" class="py-4 px-4 border-l-2 border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+
+                </ul>
+                <!-- THIS IS ONE FOR SMALL DEVICES -->
+                <ul class="flex flex overflow-y-auto pr-4 sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden ">
+                    <li id="tab-5" class="py-4 px-4 border-b-2 active_border_bottom_class  cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-6" class="py-4 px-4 border-b-2  border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-7" class="py-4 px-4 border-b-2 border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+                    <li id="tab-8" class="py-4 px-4 border-b-2 border-gray-400 cursor-pointer tab w-full text-sm">Mandarinoadv</li>
+
+                </ul>
+            </div>
+
+            <!--  JUNIOR WEB DEVELOPER FOR THE FIRST ONE-->
+            <div id="tabFirstTrigger" class="col-auto sm:co-auto md:col-auto lg:col-span-5 xl:col-span-5 2xl:col-span-5  mt-6 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 flex flex-col ">
+                <div class="mb-4">
+                    <h4 class="text-xl greenish_text_color">Junior First One</h4>
+                    <p class="text-base ">June 2021 - Present</p>
+                </div>
+                <div class="">
+                    <ul class="p-0">
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+
+
+             <!--  JUNIOR WEB DEVELOPER FOR THE SECOND  ONE-->
+             <div id="tabSecondTrigger" class=" hidden col-span-5   mt-6 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 flex-col ">
+                <div class="mb-4">
+                    <h4 class="text-xl greenish_text_color">Junior Second One</h4>
+                    <p class="text-base ">June 2021 - Present</p>
+                </div>
+                <div class="">
+                    <ul class="p-0">
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+ <!--  JUNIOR WEB DEVELOPER FOR THE THIRD  ONE-->
+ <div id="tabThirdTrigger" class=" col-span-5 hidden  mt-6 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 flex-col ">
+    <div class="mb-4">
+        <h4 class="text-xl greenish_text_color">Junior Third One</h4>
+        <p class="text-base ">June 2021 - Present</p>
+    </div>
+    <div class="">
+        <ul class="p-0">
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            
+
+        </ul>
+    </div>
+</div>
+
+
+
+ <!--  JUNIOR WEB DEVELOPER FOR THE FOURTH ONE-->
+ <div id="tabFourthTrigger" class=" col-span-5 hidden  mt-6 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0  flex-col ">
+    <div class="mb-4">
+        <h4 class="text-xl greenish_text_color">Junior Fourth One</h4>
+        <p class="text-base ">June 2021 - Present</p>
+    </div>
+    <div class="">
+        <ul class="p-0">
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            <li class="relative list-none pl-8 pb-3 started_dotted_with_padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam asdsadsdadiabsncsacasca.</li>
+            
+
+        </ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
 
 
 
 
 
+<!-- PROGETTI-->
+<div data-aos="fade-up" class=" mt-36 justify-center flex  ml-10 mr-10">
+    <div class="w-3/4  flex flex-col ">
 
+        <!-- upper div -->
+        <div class="w-3/5 ">
+            <div class=" flex justify-center  items-center">
+                <div class="greenish_text_color  text-2xl mr-1">03.</div>
+                <div class="text-3xl text-white ml-2">Some things I've built</div>
+                <div class="flex ml-3  h-full flex-grow items-center cursor-pointer">
+                    <div class="h-custom hover:translate-x-7 transform transition-all delay-75 w-full bg-gray-400"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- first project  -->
+        <div data-aos="fade-up" class=" mt-4 grid grid-col-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grdi-cols-3">
+            <div class="col-span-2 group">
+                <img   class="projects_image  group-hover:rotate-3 w-full  transform  cursor-pointer transition-all delay-75" src="./images/projectLogo.png"/>
+            </div>
+            <div class=" col-span-1 pt-8  flex flex-col ">
+                <div class="text-right text-sm mb-2 greenish_text_color">Featured Projects</div>
+                <div class="text-right text-xl text-white">Halcyon Theme</div>
+                <div class=" customBox  mt-5">
+                    A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                </div>
+                <div class="  mt-6 flex justify-end">
+                    <ul class="flex">
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Sublime Text</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">VS Code</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Atom</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">iTerm2</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Hyper</li>
+
+                    </ul>
+                </div>
+                <!-- <div class="border-2 border-green-300"></div> -->
+            </div>
+        </div>
+
+
+
+        
+        <!-- second  div -->
+        <div data-aos="fade-up" class=" mt-14 grid grid-col-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grdi-cols-3">
+            <div class=" col-span-1 pt-8  flex flex-col ">
+                <div class="text-left text-sm mb-2 greenish_text_color">Featured Projects</div>
+                <div class="text-left text-xl text-white">Halcyon Theme</div>
+                <div class=" custoBoxLeft  mt-5">
+                    A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                </div>
+                <div class="  mt-6 flex justify-start">
+                    <ul class="flex">
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Sublime Text</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">VS Code</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Atom</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">iTerm2</li>
+                        <li class="px-2 hover:-translate-y-2 cursor-pointer transform transition-all delay-100 text-xs text-white">Hyper</li>
+
+                    </ul>
+                </div>
+                <!-- <div class="border-2 border-green-300"></div> -->
+            </div>
+            <div class="col-span-2 group">
+                <img   class="projects_image  group-hover:rotate-3 w-full  transform  cursor-pointer transition-all delay-75" src="./images/projectLogo.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- OTHER  PROJECTS CONTAINER -->
+<div data-aos="fade-up" class=" flex  items-center flex-col mt-36   ml-10 mr-10">
+    <div class=" w-3/4 ">
+        <div class=" text-center text-white text-2xl ">Other Networthy Projects</div>
+        <div class="greenish_text_color text-center text-base  mt-2">View the Archive</div>
+    </div>
+    <div class=" flex flex-wrap mt-8 w-3/4 ">
+
+        <!-- PROJECT FIRST DIV -->
+        <div  class="ml-4 my-2 cursor-pointer hover:-translate-y-3 transform transition-all delay-100  background_lightNavy p-4 flex flex-col  w-80">
+            <div class=" mb-8 flex justify-between">
+                <div class="greenish_text_color"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather w-10  greenish_text_color h-auto feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></div> 
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather w-8 h-auto feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            
+            </div>
+            <div class=" text-white text-xl ">Integrating Algolia Search with WordPress Multisite</div>
+            <div class=" mt-4  text-sm ">Building a custom multisite compatible WordPress plugin to build global search with Algolia</div>
+            <div class=" mt-4 ">
+                <ul class="flex ">
+                <li class="pr-4 text-xs">Wordpress</li>
+                <li class="pr-4 text-xs">Php</li>
+                
+
+            </ul></div>
+        </div>
+  <!-- PROJECT SECOND DIV -->
+        <div class="ml-4 my-2 cursor-pointer hover:-translate-y-3 transform transition-all delay-100  background_lightNavy p-4 flex flex-col  w-80">
+            <div class=" mb-8 flex justify-between">
+                <div class="greenish_text_color"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather w-10  greenish_text_color h-auto feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></div> 
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather w-8 h-auto feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            
+            </div>
+            <div class=" text-white text-xl ">Integrating Algolia Search with WordPress Multisite</div>
+            <div class=" mt-4  text-sm ">Building a custom multisite compatible WordPress plugin to build global search with Algolia</div>
+            <div class=" mt-4 ">
+                <ul class="flex ">
+                <li class="pr-4 text-xs">Wordpress</li>
+                <li class="pr-4 text-xs">Php</li>
+                
+
+            </ul></div>
+        </div>
+
+  <!-- PROJECT THIRD DIV -->
+        <div class="ml-4  my-2 cursor-pointer hover:-translate-y-3 transform transition-all delay-100  background_lightNavy p-4 flex flex-col  w-80">
+            <div class=" mb-8 flex justify-between">
+                <div class="greenish_text_color"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather w-10  greenish_text_color h-auto feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></div> 
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather w-8 h-auto feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            
+            </div>
+            <div class=" text-white text-xl ">Integrating Algolia Search with WordPress Multisite</div>
+            <div class=" mt-4  text-sm ">Building a custom multisite compatible WordPress plugin to build global search with Algolia</div>
+            <div class=" mt-4 ">
+                <ul class="flex ">
+                <li class="pr-4 text-xs">Wordpress</li>
+                <li class="pr-4 text-xs">Php</li>
+                
+
+            </ul></div>
+        </div>
+
+
+
+  <!-- PROJECT FOURTH DIV -->
+        <div   class="ml-4 my-2 cursor-pointer hover:-translate-y-3 transform transition-all delay-100  background_lightNavy p-4 flex flex-col  w-80">
+            <div class=" mb-8 flex justify-between">
+                <div class="greenish_text_color"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather w-10  greenish_text_color h-auto feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></div> 
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather w-8 h-auto feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            
+            </div>
+            <div class=" text-white text-xl ">Integrating Algolia Search with WordPress Multisite</div>
+            <div class=" mt-4  text-sm ">Building a custom multisite compatible WordPress plugin to build global search with Algolia</div>
+            <div class=" mt-4 ">
+                <ul class="flex ">
+                <li class="pr-4 text-xs">Wordpress</li>
+                <li class="pr-4 text-xs">Php</li>
+                
+
+            </ul></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOOTER HERE -->
+
+<div class="pt-2 pb-2 flex justify-center">
+    <div class="customFooter transition-all delay-100 text-xl">Designed & Built by Manmeet Moudgill</div>
+   
+</div>
 
     <!-- FIXED DIV  -->
-    <div class="h-80 hidden  sm:hidden md:flex lg:flex xl:flex 2xl:flex  w-full fixed bottom-0  justify-between ">
+    <div class="h-80 hidden  put_backward_fixed_div sm:hidden md:flex lg:flex xl:flex 2xl:flex  w-full fixed bottom-0  justify-between ">
         <div class="left_side_div   pl-10 h-full ">
             <div class=" w-11">
                 <ul class="flex list_logos flex-col">
@@ -266,6 +539,8 @@
     </div>
 
 </body>
+<script src="./js/index.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
