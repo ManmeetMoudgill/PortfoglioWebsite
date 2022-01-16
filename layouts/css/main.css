@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: var(--slate);
+  scroll-behavior: smooth;
 }
 
 .logos svg {
@@ -176,6 +177,7 @@ html {
 }
 
 .projects_image {
+  max-width: 100%;
   -webkit-filter: grayscale(100%) contrast(1);
           filter: grayscale(100%) contrast(1);
   z-index: 999;
@@ -209,10 +211,10 @@ html {
 .customBox {
   position: relative;
   z-index: 999;
-  left: -4.2rem;
+  left: 0rem;
   padding: 1rem;
   text-align: center;
-  width: 400px;
+  width: auto;
   background-color: var(--light-navy);
 }
 
@@ -225,8 +227,27 @@ html {
   background-color: var(--light-navy);
 }
 
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .custoBoxLeft {
+    position: relative;
+    z-index: 999;
+    left: 0rem;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+  }
+}
+
 .customFooter:hover {
   color: var(--green);
   cursor: pointer;
+}
+
+.customProjectOne {
+  /*   background-image: url(../images/projectLogo.png); */
+  background-color: var(--light-navy);
+  /*  background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light; */
 }
 /*# sourceMappingURL=main.css.map */
